@@ -1,0 +1,10 @@
+name: AtomBits
+version: '${project.version}'
+main: ir.alijk.atombits.AtomBits
+authors: [ Alijk ]
+description: AtomBits exlusive plugin made by Alijk
+commands:
+  bits:
+    aliases: bit
+    description: AtomBits main command
+    usage: /<command>

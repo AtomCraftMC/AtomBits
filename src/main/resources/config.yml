@@ -1,0 +1,7 @@
+# MySQL database needs to be present for this plugin to work
+mysql:
+  host: NOT_SET
+  port: NOT_SET
+  database: NOT_SET
+  username: NOT_SET
+  password: NOT_SET
