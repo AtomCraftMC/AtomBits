@@ -6,6 +6,7 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 
 import java.util.Arrays;
+import java.util.List;
 
 public class MegaItem {
         @Getter private ItemStack itemStack;
@@ -34,15 +35,26 @@ public class MegaItem {
          * @param lore Custom lore
          */
         public MegaItem(final Material material, final String name, final String... lore) {
+                this(material, name, Arrays.asList(Common.colorize(lore)));
+        }
+
+        /**
+         * This method is used to create ItemStack with custom name and meta
+         * @param material Material Item/Block
+         * @param name Custom name
+         * @param lore Custom lore
+         */
+        public MegaItem(final Material material, final String name, final List<String> lore) {
                 this.itemStack = new ItemStack(material, 1);
                 ItemMeta meta = getItemStack().getItemMeta();
 
                 meta.setDisplayName(Common.colorize(name));
 
-                meta.setLore(Arrays.asList(Common.colorize(lore)));
+                meta.setLore(Common.colorize(lore));
 
                 getItemStack().setItemMeta(meta);
 
                 this.itemStack = getItemStack();
         }
+
 }

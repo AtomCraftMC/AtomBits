@@ -3,8 +3,13 @@ version: '${project.version}'
 main: ir.alijk.atombits.AtomBits
 authors: [ Alijk ]
 description: AtomBits exlusive plugin made by Alijk
+softdepend: [PlaceholderAPI, TAB]
 commands:
   bits:
     aliases: bit
     description: AtomBits main command
+    usage: /<command>
+  shop:
+    aliases: bitshop
+    description: Opens Bit Shop for you
     usage: /<command>

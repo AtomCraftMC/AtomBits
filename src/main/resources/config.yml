@@ -5,3 +5,4 @@ mysql:
   database: NOT_SET
   username: NOT_SET
   password: NOT_SET
+nametag-enabled: true

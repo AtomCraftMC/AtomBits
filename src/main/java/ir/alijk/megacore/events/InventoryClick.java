@@ -15,16 +15,19 @@ public class InventoryClick implements Listener {
          */
         @EventHandler
         protected void onGUIClickEvent(InventoryClickEvent event) {
-                for (MegaGUI gui: MegaPlugin.registeredGuis) {
+                MegaPlugin.registeredGuis.forEach((name, gui) -> {
                         if (!event.getInventory().getName().equalsIgnoreCase(gui.getName()))
-                                continue;
+                                return;
                         if (event.getCurrentItem() == null || event.getCurrentItem().getType() == Material.AIR)
-                                continue;
+                                return;
 
                         gui.getItemHandlers().forEach((itemStack, handler) -> {
-                                if (itemStack.isSimilar(event.getCurrentItem()))
+                                if (itemStack.isSimilar(event.getCurrentItem())) {
+                                        event.setCancelled(true);
                                         handler.handle((Player) event.getWhoClicked(), event.getCurrentItem(), event.getSlot(), event.getClick());
+                                }
                         });
-                }
+                });
+
         }
 }

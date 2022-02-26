@@ -15,7 +15,7 @@ import java.io.IOException;
 public abstract  class Configurable {
         private static File file;
         private final String configName;
-        @Getter private static FileConfiguration configu;
+        @Getter private static FileConfiguration config;
 
         public Configurable(String configName) {
                 this.configName = configName;
@@ -51,8 +51,8 @@ public abstract  class Configurable {
          * @throws InvalidConfigurationException Will be thrown if config file is not valid
          */
         public void load() throws IOException, InvalidConfigurationException {
-                configu = new YamlConfiguration();
-                configu.load(file);
+                config = new YamlConfiguration();
+                config.load(file);
         }
 
         /**

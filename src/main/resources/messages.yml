@@ -15,3 +15,31 @@ negative-balance-error: "&cCan't remove &4&l%amount% &cbits from &4&l%player_nam
 admin-balance: "&7Player &a&l%player_name% &7has &a&l%bits% &7bits!"
 
 admin-update: "&7Updated &a&l%player_name% &7balance to &a&l%bits% &7bits!"
+
+shop-gui:
+  opened: "&aShop GUI has been opened for you"
+  closed: "&cShop GUI has been closed for you"
+  rank:
+    purchase: "&aYou bought &2&l%rank% &arank!"
+    not-enough: "&7You don't have enough bits to buy &a&l%rank% &7rank!"
+    name: "&a&l%rank%"
+    info:
+      - "&a&l&m------------------------------"
+      - "&7Features &8&l» &2%features%"
+      - "&a&l&m------------------------------"
+    lore:
+      - ""
+      - "&a&l&m------------------------------"
+      - ""
+      - "&7Rank &8&l» &a&l%rank%"
+      - "&7Cost &8&l» &a&l%price% Bits"
+      - "&7Features &8&l» &a&l%features%"
+      - ""
+      - "&a&lRIGHT-CLICK &2- &aTo receive features link in chat"
+      - "&a&lLEFT-CLICK &2- &aTo buy the product"
+      - ""
+      - "&a&l&m------------------------------"
+  close:
+    name: "&cClose"
+    lore:
+      - "&4Close Shop Menu"

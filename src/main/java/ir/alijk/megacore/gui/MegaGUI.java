@@ -53,6 +53,8 @@ public abstract class MegaGUI {
         }
 
         public void register() {
-                if (!MegaPlugin.registeredGuis.contains(this)) MegaPlugin.registeredGuis.add(this);
+                if (!MegaPlugin.registeredGuis.containsKey(name)) {
+                        MegaPlugin.registeredGuis.put(name, this);
+                }
         }
 }

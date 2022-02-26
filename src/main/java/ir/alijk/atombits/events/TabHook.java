@@ -1,6 +1,7 @@
 package ir.alijk.atombits.events;
 
 import ir.alijk.atombits.AtomBits;
+import ir.alijk.atombits.config.Config;
 import ir.alijk.atombits.models.AtomPlayer;
 import ir.alijk.megacore.utils.Common;
 import me.neznamy.tab.api.team.TeamManager;
@@ -13,6 +14,8 @@ import org.bukkit.event.player.PlayerJoinEvent;
 public class TabHook implements Listener {
     @EventHandler
     public void onPlayerJoin(PlayerJoinEvent e) {
+        if (!Config.NAMETAG_ENABLED) return;
+
         Bukkit.getScheduler().runTaskLaterAsynchronously(AtomBits.getInstance(), () -> {
             TeamManager manager = AtomBits.getTabManager().getTeamManager();
 

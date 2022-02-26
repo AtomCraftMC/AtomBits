@@ -9,9 +9,7 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 
 import java.text.SimpleDateFormat;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.Date;
+import java.util.*;
 
 public class Common {
         public static String colorize(String string) {
@@ -23,6 +21,13 @@ public class Common {
                 for (int i = 0; i < strings.length; i++) translatedStrings[i] = colorize(strings[i]);
                 return translatedStrings;
         }
+
+        public static List<String> colorize(List<String> strings) {
+                List<String> translatedStrings = new ArrayList<String>();
+                for (String string: strings) translatedStrings.add(colorize(string));
+                return translatedStrings;
+        }
+
 
         public static void log(String... messages) {
                 Bukkit.getServer().getConsoleSender().sendMessage(colorize(messages));
