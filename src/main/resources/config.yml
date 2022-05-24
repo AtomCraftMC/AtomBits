@@ -6,3 +6,4 @@ mysql:
   username: NOT_SET
   password: NOT_SET
 nametag-enabled: true
+levelbits-enabled: false

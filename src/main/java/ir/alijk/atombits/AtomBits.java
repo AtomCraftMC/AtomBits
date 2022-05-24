@@ -6,7 +6,6 @@ import com.j256.ormlite.jdbc.JdbcConnectionSource;
 import com.j256.ormlite.support.ConnectionSource;
 import com.j256.ormlite.table.TableUtils;
 import ir.alijk.atombits.commands.BitsCommand;
-import ir.alijk.atombits.commands.ShopCommand;
 import ir.alijk.atombits.config.Config;
 import ir.alijk.atombits.config.Messages;
 import ir.alijk.atombits.events.Placeholders;
@@ -55,7 +54,6 @@ public final class AtomBits extends MegaPlugin {
 
         // Registering commands
         this.getCommand("bits").setExecutor(new BitsCommand());
-//        this.getCommand("shop").setExecutor(new ShopCommand());
 
         // Registering events
         register(new PlayerJoin());

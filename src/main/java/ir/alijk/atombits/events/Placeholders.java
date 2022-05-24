@@ -36,8 +36,10 @@ public class Placeholders extends PlaceholderExpansion {
     public String onRequest(OfflinePlayer player, String params) {
         if(params.equalsIgnoreCase("balance")){
             AtomPlayer atomPlayer = AtomPlayer.findPlayer(player.getName());
-            return Long.toString(atomPlayer.getBits());
 
+            if (atomPlayer == null) return "0";
+
+            return Long.toString(atomPlayer.getBits());
         }
         return null;
     }

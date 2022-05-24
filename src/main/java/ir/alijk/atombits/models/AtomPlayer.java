@@ -20,7 +20,7 @@ public class AtomPlayer {
     private String uuid;
 
     @DatabaseField @Getter @Setter
-    private long bits;
+    private long bits = 0;
 
     public AtomPlayer() {
 

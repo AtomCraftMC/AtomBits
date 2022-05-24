@@ -9,6 +9,7 @@ public class Config extends Configurable {
         public static String MYSQL_USERNAME;
         public static String MYSQL_PASSWORD;
         public static boolean NAMETAG_ENABLED;
+        public static boolean LEVELBITS_ENABLED;
 
         public Config() {
                 super("config.yml");
@@ -22,5 +23,6 @@ public class Config extends Configurable {
                 MYSQL_USERNAME = Config.getConfig().getString("mysql.username");
                 MYSQL_PASSWORD = Config.getConfig().getString("mysql.password");
                 NAMETAG_ENABLED = Config.getConfig().getBoolean("nametag-enabled");
+                LEVELBITS_ENABLED = Config.getConfig().getBoolean("levelbits-enabled");
         }
 }
