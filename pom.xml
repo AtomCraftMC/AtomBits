@@ -98,10 +98,9 @@
         </dependency>
         <dependency>
             <groupId>me.neznamy</groupId>
-            <artifactId>tab</artifactId>
-            <version>3.0.0</version>
-            <scope>system</scope>
-            <systemPath>G:/Library/java/TAB.v3.0.0.jar</systemPath>
+            <artifactId>tab-api</artifactId>
+            <version>3.0.2</version>
+            <scope>provided</scope>
         </dependency>
     </dependencies>
 </project>
