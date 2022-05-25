@@ -29,12 +29,12 @@ public class Placeholders extends PlaceholderExpansion {
 
     @Override
     public boolean persist() {
-        return true; // This is required or else PlaceholderAPI will unregister the Expansion on reload
+        return true;
     }
 
     @Override
     public String onRequest(OfflinePlayer player, String params) {
-        if(params.equalsIgnoreCase("balance")){
+        if (params.equalsIgnoreCase("balance")) {
             AtomPlayer atomPlayer = AtomPlayer.findPlayer(player.getName());
 
             if (atomPlayer == null) return "0";

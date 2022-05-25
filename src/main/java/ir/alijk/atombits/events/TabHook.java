@@ -25,7 +25,7 @@ public class TabHook implements Listener {
                         AtomBits.getTabManager().getPlayer(e.getPlayer().getUniqueId()),
                         "belowname",
                         Common.colorize(
-                                "&6&l" + Long.toString(AtomPlayer.findPlayer(e.getPlayer().getName()).getBits()) + " &e&lBits")
+                                "&6&l" + AtomPlayer.findPlayer(e.getPlayer().getName()).getBits() + " &e&lBits")
                 );
             }
         }, 20L);

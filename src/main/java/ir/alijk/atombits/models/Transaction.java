@@ -2,8 +2,10 @@ package ir.alijk.atombits.models;
 
 import com.j256.ormlite.field.DatabaseField;
 import com.j256.ormlite.table.DatabaseTable;
+
 import ir.alijk.atombits.AtomBits;
 import ir.alijk.megacore.LocalCurrentTimeStampType;
+
 import lombok.Getter;
 import lombok.Setter;
 
