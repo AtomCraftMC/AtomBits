@@ -3,7 +3,7 @@ version: '${project.version}'
 main: ir.alijk.atombits.AtomBits
 authors: [ Alijk ]
 description: AtomBits exlusive plugin made by Alijk
-softdepend: [PlaceholderAPI, TAB]
+softdepend: [ PlaceholderAPI, TAB ]
 commands:
   bits:
     aliases: bit

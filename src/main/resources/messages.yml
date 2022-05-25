@@ -1,19 +1,12 @@
 prefix: "&2[&aAtomBits&2] &a&l» "
 
 balance: "&7You currently have &a&l%bits% &7bits!"
-
 update: "&7Your bit balance updated to &a&l%bits% &7because of &a&l%reason%&7!"
-
 permission-error: "&cYou don't have enough access to do that or the command does not exist!"
-
 usage-error: "&cThe command you have entered is not valid!"
-
 player-doesnt-exist-error: "&cPlayer &4&l%player_name% &cdoes not exist!"
-
 negative-balance-error: "&cCan't remove &4&l%amount% &cbits from &4&l%player_name% &cbecause he goes negative!"
-
 admin-balance: "&7Player &a&l%player_name% &7has &a&l%bits% &7bits!"
-
 admin-update: "&7Updated &a&l%player_name% &7balance to &a&l%bits% &7bits!"
 
 shop-gui:
