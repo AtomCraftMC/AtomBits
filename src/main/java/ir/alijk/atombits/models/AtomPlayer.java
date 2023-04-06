@@ -8,7 +8,7 @@ import lombok.Setter;
 
 import java.sql.SQLException;
 
-@DatabaseTable(tableName = "atombits_players")
+@DatabaseTable(tableName = "bitssystem_players")
 public class AtomPlayer {
     @DatabaseField(columnName = "id", generatedId = true)
     private int id;

@@ -12,7 +12,7 @@ import lombok.Setter;
 import java.sql.Date;
 import java.sql.SQLException;
 
-@DatabaseTable(tableName = "atombits_transactions")
+@DatabaseTable(tableName = "bitssystem_transactions")
 public class Transaction {
     @DatabaseField(columnName = "id", generatedId = true) @Getter
     private int id;

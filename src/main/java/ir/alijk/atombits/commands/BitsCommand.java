@@ -13,7 +13,7 @@ import org.bukkit.entity.Player;
 import java.util.Arrays;
 
 public class BitsCommand implements CommandExecutor {
-    public final String ADMIN_PERMISSION = "atombits.admin";
+    public final String ADMIN_PERMISSION = "bitssystem.admin";
 
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {

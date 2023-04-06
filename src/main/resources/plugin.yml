@@ -1,7 +1,7 @@
 name: AtomBits
 version: '${project.version}'
 main: ir.alijk.atombits.AtomBits
-authors: [ Alijk ]
+authors: [ Alijk, TheWylot ]
 description: AtomBits exlusive plugin made by Alijk
 softdepend: [ PlaceholderAPI, TAB ]
 commands:
